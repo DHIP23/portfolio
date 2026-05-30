@@ -150,7 +150,7 @@ const PROJECTS = [
     },
     impact: 'Amélioration de la gouvernance interne, réduction des risques de non-suivi, conformité aux exigences de bonne gouvernance.',
     reutilisation: 'Solution unique sur le marché africain. Réplicable dans tout cabinet ministériel.',
-    url: null
+    url: 'https://diligences.onrender.com/'
   },
   {
     id: 'itsm-helpdesk',
