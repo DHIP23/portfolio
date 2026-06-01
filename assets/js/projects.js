@@ -19,7 +19,7 @@ const PROJECTS = [
     status: 'online',          // 'online' | 'ready'
     statusLabel: 'En ligne',
     icon: 'bi-file-earmark-check',
-    image: 'assets/images/projects/ged.JPG',               // 'assets/images/projects/ged.jpg' quand disponible
+    image: 'assets/images/projects/ged.jpg',               // 'assets/images/projects/ged.jpg' quand disponible
     shortProblem: 'Conservation fragile de la mémoire documentaire, recherche d’archives fastidieuse et partage d’information inefficace dans une gestion papier non structurée.',
     kpis: [
       'Délais de recherche réduits de 70-80%',
