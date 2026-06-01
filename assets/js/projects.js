@@ -15,56 +15,57 @@ const PROJECTS = [
   {
     id: 'ged-ministerielle',
     title: 'Système de Gestion Électronique de Documents (GED)',
-    sector: 'Ministère — Administration publique',
+    sector: 'Ministère Du Plan et du Developpement',
     status: 'online',          // 'online' | 'ready'
     statusLabel: 'En ligne',
     icon: 'bi-file-earmark-check',
-    image: null,               // 'assets/images/projects/ged.jpg' quand disponible
-    shortProblem: 'Gestion documentaire papier non structurée, délais élevés et risques de perte d\'archives critiques.',
+    image: 'assets/images/projects/ged.JPG',               // 'assets/images/projects/ged.jpg' quand disponible
+    shortProblem: 'Conservation fragile de la mémoire documentaire, recherche d’archives fastidieuse et partage d’information inefficace dans une gestion papier non structurée.',
     kpis: [
       'Délais de recherche réduits de 70-80%',
       'Traçabilité 100% des documents (audit trail)',
       'Zéro perte d\'archives critiques'
     ],
-    tech: ['Django', 'PostgreSQL', 'RBAC', 'OCR', 'Cloud'],
+    tech: ['Laravel', 'MySQL', 'RBAC', 'OCR', 'php', 'javascript', 'tailwind'],
     qqoqccp: {
-      Qui: 'Ministère — équipes administratives, archivistes, responsables hiérarchiques',
+      Qui: 'Ministère — équipes administratives, archivistes, responsables hiérarchiques,  citoyens',
       Quoi: 'Système de GED : numérisation, indexation, classification, recherche et partage sécurisé',
-      Où:   'Environnement ministériel, accès intranet sécurisé',
+      Où:   'on-premise',
       Quand:'Développé et mis en production — accessible en ligne',
-      Comment: 'Conception UML, développement full-stack, déploiement cloud, RBAC multi-profils',
+      Comment: 'Conception UML, développement full-stack, déploiement on-premise, RBAC multi-profils',
       Combien: 'Volumes documentaires importants, recherche instantanée',
-      Pourquoi:'Éliminer la gestion papier, sécuriser les archives, améliorer la traçabilité administrative'
+      Pourquoi:'Conserver la mémoire documentaire, sécuriser les archives, améliorer la traçabilité administrative, souveraineté numérique'
     },
     impact: 'Réduction majeure des délais de traitement, sécurisation des archives nationales, conformité légale renforcée.',
     reutilisation: 'Réplicable dans tout ministère ou institution. Marché potentiel : 50+ institutions en Afrique de l\'Ouest.',
-    url: 'https://votre-lien-ged.example.com'
+    url: 'https://siged-mpd.plan.ci/'
   },
   {
     id: 'gestion-projets',
-    title: 'Système de Gestion de Projets Ministériels',
+    title: 'Système de Gestion de Projets',
     sector: 'Ministère — Pilotage de projets publics',
     status: 'ready',
     statusLabel: 'Production ready',
     icon: 'bi-kanban',
-    image: null,
-    shortProblem: 'Absence d\'outil de pilotage structuré entraînant des dépassements de délais et de budgets.',
+    image: 'assets/images/projects/GCPMPD.JPG',
+    shortProblem: 'certains projets sont abandonnés par manque de coordination, tandis que d’autres ne sont pas exécutés bien que les effets attendus sur les populations soient appréciables.',
     kpis: [
       'Visibilité temps réel pour les décideurs',
       'Rapports d\'avancement automatisés',
-      'Traçabilité complète des décisions'
+      'Traçabilité complète des décisions',
+      'Gestion axée sur les résultats'
     ],
-    tech: ['Django', 'PostgreSQL', 'GANTT', 'PDF Reports'],
+    tech: ['Laravel', 'MySQL', 'RBAC', 'OCR', 'php', 'javascript', 'tailwind'],
     qqoqccp: {
       Qui: 'Directeur de cabinet, chefs de projet, contrôleurs de gestion',
-      Quoi: 'Plateforme de pilotage de projets publics : jalons, budgets, ressources, reporting',
-      Où:   'Déployable en intranet ministériel ou cloud souverain',
+      Quoi: 'Plateforme de pilotage de projets publics orienté PND : jalons, budgets, ressources, reporting',
+      Où:   'Déployable on premise ou en cloud',
       Quand:'Solution finalisée, en attente de déploiement',
-      Comment: 'Conception itérative avec les métiers, GANTT dynamique, tableau de bord exécutif',
+      Comment: 'Conception itérative avec les métiers, Suivi PND, tableau de bord exécutif',
       Combien: 'Gestion multi-projets simultanés, reporting automatisé',
-      Pourquoi:'Professionnaliser la gouvernance projet au sein du secteur public'
+      Pourquoi:'améliorer l’atteinte des résultats de développement'
     },
-    impact: 'Professionnalisation de la gestion de projets publics, réduction des dépassements, amélioration de la reddition de comptes.',
+    impact: 'Professionnalisation de la gestion de projets publics, réduction des dépassements',
     reutilisation: 'Réplicable dans tout organisme public, collectivité ou agence de développement.',
     url: null
   },
@@ -84,9 +85,9 @@ const PROJECTS = [
     ],
     tech: ['Python', 'Django', 'Chart.js', 'API REST', 'Web Scraping'],
     qqoqccp: {
-      Qui: 'Ministère du Plan, Finances, think tanks, institutions Bretton Woods',
+      Qui: 'Ministère du Plan et du Developpement, Finances, PME',
       Quoi: 'Dashboard interactif agrégeant indicateurs économiques et sociaux en temps réel',
-      Où:   'Déployable en SaaS ou intranet institutionnel',
+      Où:   'Déployable on premise ou en cloud',
       Quand:'Solution finalisée avec données actualisées via API',
       Comment: 'Web scraping + pipeline ETL + API World Bank / BCEAO / ONU + visualisation',
       Combien: 'Centaines d\'indicateurs, 3+ sources, actualisation automatique',
@@ -103,7 +104,7 @@ const PROJECTS = [
     status: 'online',
     statusLabel: 'En ligne',
     icon: 'bi-person-vcard',
-    image: null,
+    image: 'assets/images/projects/Digicarte.JPG',
     shortProblem: 'Gestion informelle des contacts VIP par cartes papier : risques de perte et aucune exploitabilité.',
     kpis: [
       'Temps de saisie réduit de 85% via OCR',
@@ -131,14 +132,14 @@ const PROJECTS = [
     status: 'ready',
     statusLabel: 'Production ready',
     icon: 'bi-clipboard2-check',
-    image: null,
+    image: 'assets/images/projects/Diligences1.JPG',
     shortProblem: 'Instructions ministérielles non tracées, risques de non-suivi et absence de reddition de comptes.',
     kpis: [
       '100% des diligences tracées (RACI)',
       'Tableau de bord exécutif en temps réel',
       'Historique complet des décisions'
     ],
-    tech: ['Django', 'RACI', 'GANTT', 'KANBAN', 'Workflows'],
+    tech: ['Django', 'RACI', 'GANTT', 'KANBAN', 'PostgreSQL', 'RBAC', 'Javascript'],
     qqoqccp: {
       Qui: 'Directeur de cabinet, ministre, chargés de mission, secrétariat général',
       Quoi: 'Système de suivi des diligences avec RACI, GANTT, KANBAN et workflows ministériels',
@@ -159,7 +160,7 @@ const PROJECTS = [
     status: 'ready',
     statusLabel: 'Production ready',
     icon: 'bi-headset',
-    image: null,
+    image: 'assets/images/projects/ITSM.JPG',
     shortProblem: 'Support IT informel (email, téléphone) : tickets perdus, SLA non mesurés, satisfaction non évaluée.',
     kpis: [
       'SLA mesurés en temps réel',
@@ -178,7 +179,7 @@ const PROJECTS = [
     },
     impact: 'Amélioration de la qualité de service IT, mesure objective des performances, professionnalisation de la DSI.',
     reutilisation: 'Alternative souveraine à ServiceNow/Jira. Fort potentiel dans toutes les DSI institutionnelles africaines.',
-    url: null
+    url: 'https://itsm-0256.onrender.com/'
   }
 ];
 
