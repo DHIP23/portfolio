@@ -76,14 +76,14 @@ const PROJECTS = [
     status: 'ready',
     statusLabel: 'Production ready',
     icon: 'bi-graph-up-arrow',
-    image: null,
+    image: 'assets/images/projects/ci_dashboard.JPG',
     shortProblem: 'Données économiques dispersées entre World Bank, BCEAO et ONU, inaccessibles pour les décideurs.',
     kpis: [
       'Agrégation de 3+ sources internationales',
       'Actualisation automatique via API',
       'Temps de collecte : de jours à secondes'
     ],
-    tech: ['Python', 'Django', 'Chart.js', 'API REST', 'Web Scraping'],
+    tech: ['Python', 'JavaScript', 'CSS', 'API REST', 'Numpy'],
     qqoqccp: {
       Qui: 'Ministère du Plan et du Developpement, Finances, PME',
       Quoi: 'Dashboard interactif agrégeant indicateurs économiques et sociaux en temps réel',
@@ -95,7 +95,7 @@ const PROJECTS = [
     },
     impact: 'Accès facilité aux indicateurs macroéconomiques, aide à la décision pour planificateurs publics.',
     reutilisation: 'Adaptable à tout secteur : santé, éducation, agriculture. Fort potentiel SaaS.',
-    url: null
+    url: 'https://ci-dashboard-w1dq.onrender.com/'
   },
   {
     id: 'gestion-cartes',
