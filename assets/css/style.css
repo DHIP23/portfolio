@@ -102,18 +102,25 @@ a:hover { color: var(--accent); }
 .brand-name {
   font-weight: 600;
   font-size: 1rem;
-  color: var(--navy);
+  color: #fff;
 }
 
 .nav-link {
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--text-primary) !important;
+  color: #fff !important;
   padding: 0.5rem 0.85rem !important;
   border-radius: var(--radius-sm);
   transition: background var(--transition), color var(--transition);
 }
 
+#navbar.scrolled .brand-name {
+  color: var(--navy);
+}
+
+#navbar.scrolled .nav-link {
+  color: var(--text-primary) !important;
+}
 .nav-link:hover,
 .nav-link.active {
   background: var(--accent-light);

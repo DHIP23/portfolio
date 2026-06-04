@@ -20,7 +20,9 @@ const PROJECTS = [
     statusLabel: 'En ligne',
     icon: 'bi-file-earmark-check',
     image: 'assets/images/projects/ged.jpg',               // 'assets/images/projects/ged.jpg' quand disponible
-    shortProblem: 'Conservation fragile de la mémoire documentaire, recherche d’archives fastidieuse et partage d’information inefficace dans une gestion papier non structurée.',
+    shortProblem: 'Mémoire documentaire fragile, recherche d\'archives'+
+    'fastidieuse, partage d\'information inefficace dans'+
+    'une organisation entièrement papier.',
     kpis: [
       'Délais de recherche réduits de 70-80%',
       'Traçabilité 100% des documents (audit trail)',
@@ -36,7 +38,7 @@ const PROJECTS = [
       Combien: 'Volumes documentaires importants, recherche instantanée',
       Pourquoi:'Conserver la mémoire documentaire, sécuriser les archives, améliorer la traçabilité administrative, souveraineté numérique'
     },
-    impact: 'Réduction majeure des délais de traitement, sécurisation des archives nationales, conformité légale renforcée.',
+    impact: 'Sécurisation de la mémoire institutionnelle, conformité  légale renforcée, souveraineté numérique assurée.',
     reutilisation: 'Réplicable dans tout ministère ou institution. Marché potentiel : 50+ institutions en Afrique de l\'Ouest.',
     url: 'https://siged-mpd.plan.ci/'
   },
@@ -48,7 +50,7 @@ const PROJECTS = [
     statusLabel: 'Production ready',
     icon: 'bi-kanban',
     image: 'assets/images/projects/GCPMPD.JPG',
-    shortProblem: 'certains projets sont abandonnés par manque de coordination, tandis que d’autres ne sont pas exécutés bien que les effets attendus sur les populations soient appréciables.',
+    shortProblem: 'Projets abandonnés faute de coordination, résultats attendus non atteints malgré des enjeux importants pour les populations bénéficiaires.',
     kpis: [
       'Visibilité temps réel pour les décideurs',
       'Rapports d\'avancement automatisés',
@@ -65,8 +67,8 @@ const PROJECTS = [
       Combien: 'Gestion multi-projets simultanés, reporting automatisé',
       Pourquoi:'améliorer l’atteinte des résultats de développement'
     },
-    impact: 'Professionnalisation de la gestion de projets publics, réduction des dépassements',
-    reutilisation: 'Réplicable dans tout organisme public, collectivité ou agence de développement.',
+    impact: 'Professionnalisation de la gestion de projets publics, réduction des dépassements , pilotage orienté résultats.',
+    reutilisation: 'Adaptable à tout organisme public, collectivité territoriale ou agence de développement.',
     url: null
   },
   {
@@ -77,24 +79,24 @@ const PROJECTS = [
     statusLabel: 'Production ready',
     icon: 'bi-graph-up-arrow',
     image: 'assets/images/projects/ci_dashboard.JPG',
-    shortProblem: 'Données économiques dispersées entre World Bank, BCEAO et ONU, inaccessibles pour les décideurs.',
+    shortProblem: 'Données économiques et sociales dispersées entre Banque Mondiale, Nations Unies (SDG) et PNUD (HDR), inaccessibles pour les décideurs sans traitement manuel.',
     kpis: [
-      'Agrégation de 3+ sources internationales',
-      'Actualisation automatique via API',
-      'Temps de collecte : de jours à secondes'
+      '3 sources internationales agrégées en un seul outil',
+      'Actualisation automatique via API (temps réel)',
+      'Collecte ramenée de plusieurs jours à quelques secondes'
     ],
-    tech: ['Python', 'JavaScript', 'CSS', 'API REST', 'Numpy'],
+    tech: ['Python', 'JavaScript', 'CSS', 'API REST', 'Numpy','Pandas'],
     qqoqccp: {
       Qui: 'Ministère du Plan et du Developpement, Finances, PME',
       Quoi: 'Dashboard interactif agrégeant indicateurs économiques et sociaux en temps réel',
       Où:   'Déployable on premise ou en cloud',
       Quand:'Solution finalisée avec données actualisées via API',
-      Comment: 'Web scraping + pipeline ETL + API World Bank / BCEAO / ONU + visualisation',
-      Combien: 'Centaines d\'indicateurs, 3+ sources, actualisation automatique',
+      Comment: 'pipeline ETL + API Banque Mondiale / Nations Unies SDG / PNUD HDR + visualisation',
+      Combien: 'Centaines d\'indicateurs, 3+ sources, actualisation periodique',
       Pourquoi:'Faciliter la prise de décision basée sur les données (data-driven)'
     },
-    impact: 'Accès facilité aux indicateurs macroéconomiques, aide à la décision pour planificateurs publics.',
-    reutilisation: 'Adaptable à tout secteur : santé, éducation, agriculture. Fort potentiel SaaS.',
+    impact: 'Accès facilité aux indicateurs macroéconomiques,aide à la décision fondée sur les données pour les planificateurs et analystes publics.',
+    reutilisation: 'Adaptable à tout secteur : santé, éducation, agriculture. Fort potentiel de déploiement en mode SaaS.',
     url: 'https://ci-dashboard-w1dq.onrender.com/'
   },
   {
@@ -105,10 +107,10 @@ const PROJECTS = [
     statusLabel: 'En ligne',
     icon: 'bi-person-vcard',
     image: 'assets/images/projects/Digicarte.JPG',
-    shortProblem: 'Gestion informelle des contacts VIP par cartes papier : risques de perte et aucune exploitabilité.',
+    shortProblem: 'Contacts VIP gérés par cartes papier : risque de perte, aucune exploitabilité, aucune recherche possible.',
     kpis: [
-      'Temps de saisie réduit de 85% via OCR',
-      'Base contacts 100% structurée et recherchable',
+      'Temps de saisie réduit de 85 % grâce à l\'OCR automatique',
+      'Base de contacts 100 % structurée et interrogeable',
       'Zéro risque de perte de carte'
     ],
     tech: ['Django', 'Tesseract OCR', 'PostgreSQL', 'Export CSV'],
@@ -121,8 +123,8 @@ const PROJECTS = [
       Combien: 'Des centaines à milliers de cartes, recherche instantanée',
       Pourquoi:'Transformer un carnet d\'adresses papier en base de contacts sécurisée'
     },
-    impact: 'Professionnalisation de la gestion des contacts institutionnels, sécurisation du capital relationnel.',
-    reutilisation: 'Potentiel : cabinets politiques, ambassades, organismes internationaux.',
+    impact: 'Sécurisation du capital relationnel institutionnel, professionnalisation de la gestion du protocole.',
+    reutilisation: 'PApplicable dans tout cabinet, ambassade ou organisation internationale.',
     url: 'https://votre-lien-ocr.example.com'
   },
   {
@@ -133,11 +135,11 @@ const PROJECTS = [
     statusLabel: 'Production ready',
     icon: 'bi-clipboard2-check',
     image: 'assets/images/projects/Diligences1.JPG',
-    shortProblem: 'Instructions ministérielles non tracées, risques de non-suivi et absence de reddition de comptes.',
+    shortProblem: 'Instructions ministérielles non tracées, risque élevé de non-suivi, absence de reddition de comptes formelle.',
     kpis: [
       '100% des diligences tracées (RACI)',
       'Tableau de bord exécutif en temps réel',
-      'Historique complet des décisions'
+      'Historique complet et auditable des décisions'
     ],
     tech: ['Django', 'RACI', 'GANTT', 'KANBAN', 'PostgreSQL', 'RBAC', 'Javascript'],
     qqoqccp: {
@@ -149,21 +151,21 @@ const PROJECTS = [
       Combien: 'Gestion de diligences multiples simultanées avec priorisation',
       Pourquoi:'Structurer et tracer le suivi des engagements pour améliorer la gouvernance'
     },
-    impact: 'Amélioration de la gouvernance interne, réduction des risques de non-suivi, conformité aux exigences de bonne gouvernance.',
-    reutilisation: 'Solution unique sur le marché africain. Réplicable dans tout cabinet ministériel.',
+    impact: 'Gouvernance interne renforcée, réduction du risque de non-suivi, conformité aux exigences de bonne gouvernance institutionnelle.',
+    reutilisation: 'Solution sans équivalent direct sur le marché africain. Réplicable dans tout cabinet ministériel ou institution de gouvernance.',
     url: 'https://diligences.onrender.com/'
   },
   {
     id: 'itsm-helpdesk',
-    title: 'Système de Gestion des Requêtes (ITSM / Helpdesk)',
-    sector: 'DSI — Support IT institutionnel',
+    title: 'Système de Gestion des Requêtes IT (ITSM)',
+    sector: 'DSI — Support informatique institutionnel',
     status: 'ready',
     statusLabel: 'Production ready',
     icon: 'bi-headset',
     image: 'assets/images/projects/ITSM.JPG',
-    shortProblem: 'Support IT informel (email, téléphone) : tickets perdus, SLA non mesurés, satisfaction non évaluée.',
+    shortProblem: 'Support IT géré par email et téléphone : tickets égarés, SLA non mesurés, satisfaction non évaluée, aucune visibilité pour la direction.',
     kpis: [
-      'SLA mesurés en temps réel',
+      'SLA mesurés et suivis en temps réel',
       'Zéro ticket perdu (traçabilité 100%)',
       'Rapport mensuel automatisé pour la direction'
     ],
@@ -177,7 +179,7 @@ const PROJECTS = [
       Combien: 'Flux de tickets illimité, SLA paramétrables, reporting automatique',
       Pourquoi:'Professionnaliser le support IT et sortir de l\'informel'
     },
-    impact: 'Amélioration de la qualité de service IT, mesure objective des performances, professionnalisation de la DSI.',
+    impact: 'Professionnalisation du support IT, mesure objective des niveaux de service, sortie de l\'informel.',
     reutilisation: 'Alternative souveraine à ServiceNow/Jira. Fort potentiel dans toutes les DSI institutionnelles africaines.',
     url: 'https://itsm-0256.onrender.com/'
   }
