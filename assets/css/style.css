@@ -181,6 +181,7 @@ a:hover { color: var(--accent); }
   font-weight: 500;
   padding: 0.4rem 1rem;
   border-radius: 999px;
+  margin-top: 2rem;
 }
 
 /* Titre principal */
