@@ -104,7 +104,13 @@ a:hover { color: var(--accent); }
   font-size: 1rem;
   color: #fff;
 }
-
+@media (max-width: 991.98px) {
+  #navbar,
+  #navbar.scrolled {
+    background:  var(--font-display);
+    backdrop-filter: blur(12px);
+  }
+}
 .nav-link {
   font-size: 0.9rem;
   font-weight: 500;
