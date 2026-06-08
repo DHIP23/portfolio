@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://votre-username.github.io/portfolio/sitemap.xml
+Sitemap: https://dhip23.github.io/portfolio/sitemap.xml
